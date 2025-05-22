@@ -1,6 +1,6 @@
 {
-  "name": "Open WebUI",
-  "short_name": "WebUI",
+  "name": "Eriteach AI lab",
+  "short_name": "Eriteach AI lab",
   "icons": [
     {
       "src": "/static/web-app-manifest-192x192.png",
@@ -17,5 +17,6 @@
   ],
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "description": "Eriteach AI lab is a self-hosted, extensible, user-friendly interface for AI that adapts to your workflow."
 }

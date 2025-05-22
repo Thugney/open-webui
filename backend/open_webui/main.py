@@ -483,7 +483,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Open WebUI",
+    title="Eriteach AI lab",
     docs_url="/docs" if ENV == "dev" else None,
     openapi_url="/openapi.json" if ENV == "dev" else None,
     redoc_url=None,
@@ -507,10 +507,8 @@ app.state.LICENSE_METADATA = None
 #
 ########################################
 
-if ENABLE_OTEL:
-    from open_webui.utils.telemetry.setup import setup as setup_opentelemetry
 
-    setup_opentelemetry(app=app, db_engine=engine)
+    # Telemetry/OTEL removed for Eriteach AI lab
 
 
 ########################################
@@ -1528,7 +1526,7 @@ async def get_manifest_json():
         return {
             "name": app.state.WEBUI_NAME,
             "short_name": app.state.WEBUI_NAME,
-            "description": "Open WebUI is an open, extensible, user-friendly interface for AI that adapts to your workflow.",
+            "description": "Eriteach AI lab is a self-hosted, extensible, user-friendly interface for AI that adapts to your workflow.",
             "start_url": "/",
             "display": "standalone",
             "background_color": "#343541",
